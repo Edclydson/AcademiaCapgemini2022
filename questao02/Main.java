@@ -17,20 +17,20 @@ public class Main {
         Senha paswrd = new Senha();
 
         paswrd.setSenha("Ya3&ab");
-        senhaSegura(paswrd.getSenha());
+        System.out.println(senhaSegura(paswrd.getSenha()));
     }
 /**
  * 
  * @param senhaInformada 
  */
-    public static void senhaSegura(String senhaInformada)
+    public static String senhaSegura(String senhaInformada)
     {
         String[] caractesp = {"!","@","#","$","%","^","&","*","(",")","-","+"};
         if(senhaInformada.length() < 6)
         {
             System.out.println("A senha precisa de no minimo 6 caracteres!\n");
-            System.out.println("Adicione mais "+(6-senhaInformada.length())+" caracteres para deixar sua senha mais segura\n");
             System.out.println("Insira números, letras maiúsculas/minúsculas ou caracteres especiais !@#$%^&*()-+");
+            return "Adicione mais "+(6-senhaInformada.length())+" caracteres para deixar sua senha mais segura";
         }
         else
         {
@@ -52,12 +52,12 @@ public class Main {
            }
            if(mai>=1 && min>=1 && let>=1 && dig>=1 && car>=1)
            {
-               System.out.println("Senha Forte");
+               return "Senha Forte";
            }
            else
            {
-               System.out.println("Senha Fraca!");
                System.out.println("Insira números, letras maiúsculas/minúsculas ou caracteres especiais !@#$%^&*()-+");
+               return "Senha Fraca";
            }
         }
     }

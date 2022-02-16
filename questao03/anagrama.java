@@ -13,13 +13,20 @@ public class anagrama
 {
     public static void main(String[] args) 
     {
-        
         String palavraRecebida = "ovo";
         ArrayList<String> lista = new ArrayList<String>();
         int totalAnagramas;
         lista = dividePalavra(palavraRecebida);        
         totalAnagramas = detectaAnagrama(lista);
-        System.out.println("Foram encontrados " + totalAnagramas+" anagramas!");
+
+        if(totalAnagramas == 0)
+        {
+            System.out.println("Não foram encontrados anagramas para a palavra informada!");
+        }
+        else
+        {
+            System.out.println("Foram encontrados " + totalAnagramas+" anagramas!");
+        }
     }
     /**
      * 

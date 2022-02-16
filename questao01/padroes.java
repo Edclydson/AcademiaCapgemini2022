@@ -15,7 +15,15 @@ public class padroes
     public static void main(String[] args) 
     {
         int qtndEstrelas = 6;
-        for(int indiceExt = 1; indiceExt <= qtndEstrelas;indiceExt++)
+        estrelinhas(qtndEstrelas);        
+    }
+    /**
+     * 
+     * @param estrelas
+     */
+    public static void estrelinhas(int estrelas)
+    {
+        for(int indiceExt = 1; indiceExt <= estrelas;indiceExt++)
         {
             for(int indiceInt = 1;indiceInt<=indiceExt;indiceInt++){System.out.print("*");}
             System.out.println("");
