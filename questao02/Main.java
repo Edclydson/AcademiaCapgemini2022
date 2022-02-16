@@ -1,6 +1,3 @@
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 /**
  * 2º Questão desafio Academia Capgemini 2022
  * Débora se inscreveu em uma rede social para se manter em contato com seus amigos. 
