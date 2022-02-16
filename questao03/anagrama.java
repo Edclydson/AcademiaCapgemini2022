@@ -8,13 +8,6 @@ import java.util.Arrays;
  * algoritmo que encontre o número de pares de substringtrings que são anagramas.
  * 
  * @author: Edclydson Sousa
- * 
- * @param1: palavraRecebida, palavra
- * @param2: totalAnagramas,qtndAnagramas
- * @param3: lista, lista1
- * @param4: primLetra, ultLetra
- * 
- * 
  */
 public class anagrama
 {
