@@ -10,7 +10,6 @@
  * Contém no mínimo 1 caractere especial. Os caracteres especiais são: !@#$%^&*()-+
  * 
  * @author: Edclydson Sousa
- * 
  */
 
 public class Main {
@@ -20,7 +19,10 @@ public class Main {
         paswrd.setSenha("Ya3&ab");
         senhaSegura(paswrd.getSenha());
     }
-
+/**
+ * 
+ * @param senhaInformada 
+ */
     public static void senhaSegura(String senhaInformada)
     {
         String[] caractesp = {"!","@","#","$","%","^","&","*","(",")","-","+"};
@@ -32,7 +34,7 @@ public class Main {
         }
         else
         {
-            int mai=0,min=0,let=0,dig = 0,car = 0;
+            int mai=0,min=0,let=0,dig=0,car=0;
             char[] senha = senhaInformada.toCharArray();
             for(char x : senha)
             {

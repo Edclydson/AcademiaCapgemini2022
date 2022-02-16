@@ -5,10 +5,13 @@
  * A última linha não deve conter nenhum espaço.
  * 
  * @author: Edclydson Sousa
- * 
  */
 public class padroes
 {
+/**
+ * 
+ * @param args
+ */
     public static void main(String[] args) 
     {
         int qtndEstrelas = 6;

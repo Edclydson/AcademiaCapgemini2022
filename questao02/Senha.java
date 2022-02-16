@@ -10,7 +10,6 @@
  * Contém no mínimo 1 caractere especial. Os caracteres especiais são: !@#$%^&*()-+
  * 
  * @author: Edclydson Sousa
- * 
  */
 public class Senha{
     private String senha;
